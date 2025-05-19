@@ -17,5 +17,6 @@ struct CuboAmbientalApp: App {
         ImmersiveSpace(id: "ImmersiveSpace") {
             ImmersiveView()
         }
+        .immersionStyle(selection: .constant(.mixed), in: .mixed)
     }
 }

@@ -1,21 +1,41 @@
-//
-//  ImmersiveView.swift
-//  CuboAmbiental
-//
-//  Created by alumno on 5/16/25.
-//
-
 import SwiftUI
 import RealityKit
 import RealityKitContent
 
 struct ImmersiveView: View {
+    @State private var dioramaManager: DioramaManager?
+
     var body: some View {
         RealityView { content in
-            // Add the initial RealityKit content
-            if let scene = try? await Entity(named: "Immersive", in: realityKitContentBundle) {
-                content.add(scene)
-            }
+            let anchor = AnchorEntity()
+            anchor.components.set(
+                AnchoringComponent(
+                    .plane(
+                        .horizontal,
+                        classification: .any,
+                        minimumBounds: [0.2, 0.2]
+                    )
+                )
+            )
+            content.add(anchor)
+
+            let cubeEntity = ModelEntity(
+                mesh: .generateBox(size: [0.2, 0.2, 0.2]),
+                materials: [SimpleMaterial(color: .white, isMetallic: false)]
+            )
+
+            cubeEntity.generateCollisionShapes(recursive: true)
+            cubeEntity.components.set(InputTargetComponent())
+
+            cubeEntity.components.set(PhysicsBodyComponent(
+                massProperties: .default,
+                material: .default,
+                mode: .dynamic
+            ))
+
+            anchor.addChild(cubeEntity)
+
+            dioramaManager = DioramaManager(parent: cubeEntity)
         }
     }
 }
