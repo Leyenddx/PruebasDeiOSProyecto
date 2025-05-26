@@ -9,7 +9,7 @@ struct ImmersiveView: View {
 
     var body: some View {
         RealityView { content in
-            let anchor = AnchorEntity(.plane(.horizontal, classification: .any, minimumBounds: [0.2, 0.2]))
+            let anchor = AnchorEntity(.plane(.horizontal, classification: .any, minimumBounds: [1, 1]))
             content.add(anchor)
 
             Task {
@@ -17,9 +17,10 @@ struct ImmersiveView: View {
                     let modelEntity = try ModelEntity.load(named: "MagicalForest", in: realityKitContentBundle)
                     
                     await MainActor.run {
-                        modelEntity.scale = [0.1, 0.1, 0.1]
+                        modelEntity.scale = [0.2, 0.2, 0.2]
                         modelEntity.position = [0, 0, 0]
                         modelEntity.generateCollisionShapes(recursive: true)
+                        modelEntity.components.set(PhysicsBodyComponent(massProperties: .init(mass: 15.0), mode: .dynamic))
                         print("EL mdoelo actual es: \(modelEntity)")
                         anchor.addChild(modelEntity)
                        // dioramaEntity = modelEntity
@@ -31,12 +32,12 @@ struct ImmersiveView: View {
             }
 
             let floor = ModelEntity(
-                mesh: .generatePlane(width: 2.0, depth: 2.0),
+                mesh: .generatePlane(width: 5.0, depth: 0),
                 materials: [SimpleMaterial(color: .clear, isMetallic: false)]
             )
             floor.generateCollisionShapes(recursive: true)
             floor.components.set(PhysicsBodyComponent(mode: .static))
-            let floorAnchor = AnchorEntity(.plane(.horizontal, classification: .floor, minimumBounds: [1.0, 1.0]))
+            let floorAnchor = AnchorEntity(.plane(.horizontal, classification: .floor, minimumBounds: [4.0, 4.0]))
             floorAnchor.addChild(floor)
             content.add(floorAnchor)
         }
