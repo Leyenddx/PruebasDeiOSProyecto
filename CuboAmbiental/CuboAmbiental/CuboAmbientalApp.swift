@@ -1,19 +1,15 @@
-//
-//  CuboAmbientalApp.swift
-//  CuboAmbiental
-//
-//  Created by alumno on 5/16/25.
-//
-
 import SwiftUI
 
 @main
 struct CuboAmbientalApp: App {
     var body: some Scene {
+        // Vista principal del app
         WindowGroup {
             ContentView()
-        }.windowStyle(.volumetric)
+        }
+        .windowStyle(.volumetric)
 
+        // Espacio inmersivo 3D
         ImmersiveSpace(id: "ImmersiveSpace") {
             ImmersiveView()
         }

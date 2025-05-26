@@ -15,15 +15,27 @@ class DioramaManager {
     private weak var parentEntity: Entity?
     private var audioPlayer: AVAudioPlayer?
 
+    // Contenedor para modelos
+    private var modelContainer = Entity()
+
     init(parent: Entity) {
         self.parentEntity = parent
+
+        // Añade contenedor al parent para controlar solo los modelos
+        parent.addChild(modelContainer)
+
         loadDioramas()
         loadCurrentDiorama()
     }
 
     private func loadDioramas() {
         dioramas = [
-            Diorama(name: "Bosque", modelName: "ForestLand.usdc", ambientSound: "bosqueSound.mp3", music: "musicaprueba.mp3"),
+            Diorama(
+                name: "Bosque",
+                modelName: "caja",
+                ambientSound: "bosqueSound.mp3",
+                music: "musicaprueba.mp3"
+            )
         ]
     }
 
@@ -33,15 +45,31 @@ class DioramaManager {
     }
 
     private func loadCurrentDiorama() {
-        guard let parent = parentEntity else { return }
+        guard let _ = parentEntity else { return }
 
-        parent.children.removeAll()
+        // Limpia solo el modelo anterior
+        modelContainer.children.removeAll()
+
         let current = dioramas[currentIndex]
 
-        if let modelEntity = try? Entity.load(named: current.modelName) {
-            modelEntity.setPosition([0, 0, 0], relativeTo: parent)
-            parent.addChild(modelEntity)
+        // Cargar modelo
+        Task {
+            do {
+                // Aquí usas await para cargar la entidad async
+                let modelEntity = try await Entity(named: current.modelName)
+
+                // Cambias al hilo principal para modificar scale y position
+                await MainActor.run {
+                    modelEntity.scale = [0.1, 0.1, 0.1]  // Ajusta la escala para Vision Pro
+                    modelEntity.position = [0, 0, 0]
+
+                    modelContainer.addChild(modelEntity)
+                }
+            } catch {
+                print("Error cargando modelo \(current.modelName): \(error)")
+            }
         }
+
 
         playSound(named: current.ambientSound)
     }

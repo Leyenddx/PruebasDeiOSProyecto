@@ -1,0 +1,98 @@
+-------- Plugin Loading Log ------------
+
+Clearing the plugin cache from the registry. Existing version: 0, current version: 53
+
+Loading from root path: /Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/Resources/LocalizedPresets/en_US/
+Scanning for the following file types: *.bundle
+
+Scanning /Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/Resources/LocalizedPresets/en_US/ and sub-directories
+
+Loading from root path: /Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/
+Scanning for the following file types: *.bundle
+
+Begin PluginNameList::AddFolder /Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ 0
+PluginNameList::AddFilePath - added "/Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterMPEG.bundle" 0
+PluginNameList::AddFilePath - added "/Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterRED.bundle" 0
+PluginNameList::AddFilePath - added "/Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/TransmitFullScreen.bundle" 0
+PluginNameList::AddFilePath - added "/Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterMXF.bundle" 0
+PluginNameList::AddFilePath - added "/Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterXDCAMEX.bundle" 0
+PluginNameList::AddFilePath - added "/Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterFFMPEG.bundle" 0
+PluginNameList::AddFilePath - added "/Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterLeader.bundle" 0
+PluginNameList::AddFilePath - added "/Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterQuickTime.bundle" 0
+PluginNameList::AddFilePath - added "/Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterFastMPEG.bundle" 0
+PluginNameList::AddFilePath - added "/Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterBarsAndTone.bundle" 0
+PluginNameList::AddFilePath - added "/Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterF65.bundle" 0
+PluginNameList::AddFilePath - added "/Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterAIFF.bundle" 0
+PluginNameList::AddFilePath - added "/Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterMP3.bundle" 0
+PluginNameList::AddFilePath - added "/Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterARRIRAW.bundle" 0
+PluginNameList::AddFilePath - added "/Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterWave.bundle" 0
+Finished PluginNameList::AddFolder /Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ 0
+Scanning /Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ and sub-directories
+
+Loading /Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterMPEG.bundle
+Loading from disk...
+This plugin was recognized by loader ba1058cd-0007-44e4-bf1a-0ef51307b979.
+
+Loading /Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterRED.bundle
+Loading from disk...
+This plugin was recognized by loader ba1058cd-0007-44e4-bf1a-0ef51307b979.
+
+Loading /Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/TransmitFullScreen.bundle
+Loading from disk...
+No loaders recognized this plugin, so the plugin is set to Ignore.
+
+Loading /Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterMXF.bundle
+Loading from disk...
+This plugin was recognized by loader ba1058cd-0007-44e4-bf1a-0ef51307b979.
+
+Loading /Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterXDCAMEX.bundle
+Loading from disk...
+No loaders recognized this plugin, so the plugin is set to Ignore.
+
+Loading /Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterFFMPEG.bundle
+Loading from disk...
+This plugin was recognized by loader ba1058cd-0007-44e4-bf1a-0ef51307b979.
+
+Loading /Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterLeader.bundle
+Loading from disk...
+This plugin was recognized by loader ba1058cd-0007-44e4-bf1a-0ef51307b979.
+
+Loading /Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterQuickTime.bundle
+Loading from disk...
+This plugin was recognized by loader ba1058cd-0007-44e4-bf1a-0ef51307b979.
+
+Loading /Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterFastMPEG.bundle
+Loading from disk...
+No loaders recognized this plugin, so the plugin is set to Ignore.
+
+Loading /Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterBarsAndTone.bundle
+Loading from disk...
+This plugin was recognized by loader ba1058cd-0007-44e4-bf1a-0ef51307b979.
+
+Loading /Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterF65.bundle
+Loading from disk...
+No loaders recognized this plugin, so the plugin is set to Ignore.
+
+Loading /Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterAIFF.bundle
+Loading from disk...
+This plugin was recognized by loader ba1058cd-0007-44e4-bf1a-0ef51307b979.
+
+Loading /Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterMP3.bundle
+Loading from disk...
+This plugin was recognized by loader ba1058cd-0007-44e4-bf1a-0ef51307b979.
+
+Loading /Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterARRIRAW.bundle
+Loading from disk...
+This plugin was recognized by loader ba1058cd-0007-44e4-bf1a-0ef51307b979.
+
+Loading /Applications/Adobe Audition 2025/Adobe Audition 2025.app/Contents/PlugIns/Common/ImporterWave.bundle
+Loading from disk...
+This plugin was recognized by loader ba1058cd-0007-44e4-bf1a-0ef51307b979.
+
+Loading from root path: /Library/Application Support/Adobe/Common/Plug-ins/7.0/MediaCore
+Scanning for the following file types: *.bundle
+
+Begin PluginNameList::AddFolder /Library/Application Support/Adobe/Common/Plug-ins/7.0/MediaCore 0
+Finished PluginNameList::AddFolder /Library/Application Support/Adobe/Common/Plug-ins/7.0/MediaCore 0
+Scanning /Library/Application Support/Adobe/Common/Plug-ins/7.0/MediaCore and sub-directories
+

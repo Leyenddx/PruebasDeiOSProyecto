@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB36DCD82DDB87F100753181 /* DioramaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB36DCD72DDB87F100753181 /* DioramaManager.swift */; };
+		FB36DCDA2DDB886300753181 /* Diorama.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB36DCD92DDB886300753181 /* Diorama.swift */; };
+		FB36DCE02DDB892900753181 /* musicaprueba.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB36DCDF2DDB892900753181 /* musicaprueba.mp3 */; };
+		FB36DCE22DDB899D00753181 /* bosqueSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB36DCE12DDB899D00753181 /* bosqueSound.mp3 */; };
 		FB4E9BB32DD78DA90037539C /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = FB4E9BB22DD78DA90037539C /* RealityKitContent */; };
 		FB4E9BB52DD78DA90037539C /* CuboAmbientalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4E9BB42DD78DA90037539C /* CuboAmbientalApp.swift */; };
 		FB4E9BB72DD78DA90037539C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4E9BB62DD78DA90037539C /* ContentView.swift */; };
@@ -14,6 +18,7 @@
 		FB4E9BBB2DD78DAA0037539C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB4E9BBA2DD78DAA0037539C /* Assets.xcassets */; };
 		FB4E9BBE2DD78DAA0037539C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB4E9BBD2DD78DAA0037539C /* Preview Assets.xcassets */; };
 		FB4E9BC92DD78DAA0037539C /* CuboAmbientalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4E9BC82DD78DAA0037539C /* CuboAmbientalTests.swift */; };
+		FB4E9BD32DD791C70037539C /* caja.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB4E9BD22DD791C70037539C /* caja.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB36DCD72DDB87F100753181 /* DioramaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DioramaManager.swift; sourceTree = "<group>"; };
+		FB36DCD92DDB886300753181 /* Diorama.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diorama.swift; sourceTree = "<group>"; };
+		FB36DCDF2DDB892900753181 /* musicaprueba.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = musicaprueba.mp3; path = ../../../musicaprueba.mp3; sourceTree = "<group>"; };
+		FB36DCE12DDB899D00753181 /* bosqueSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bosqueSound.mp3; path = ../../../bosqueSound.mp3; sourceTree = "<group>"; };
 		FB4E9BAD2DD78DA90037539C /* CuboAmbiental.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuboAmbiental.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB4E9BB12DD78DA90037539C /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		FB4E9BB42DD78DA90037539C /* CuboAmbientalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuboAmbientalApp.swift; sourceTree = "<group>"; };
@@ -37,6 +46,7 @@
 		FB4E9BBF2DD78DAA0037539C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB4E9BC42DD78DAA0037539C /* CuboAmbientalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuboAmbientalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB4E9BC82DD78DAA0037539C /* CuboAmbientalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuboAmbientalTests.swift; sourceTree = "<group>"; };
+		FB4E9BD22DD791C70037539C /* caja.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = caja.usdz; path = ../../../../caja.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +93,12 @@
 				FB4E9BB42DD78DA90037539C /* CuboAmbientalApp.swift */,
 				FB4E9BB62DD78DA90037539C /* ContentView.swift */,
 				FB4E9BB82DD78DA90037539C /* ImmersiveView.swift */,
+				FB36DCD72DDB87F100753181 /* DioramaManager.swift */,
+				FB36DCD92DDB886300753181 /* Diorama.swift */,
 				FB4E9BBA2DD78DAA0037539C /* Assets.xcassets */,
+				FB4E9BD22DD791C70037539C /* caja.usdz */,
+				FB36DCDF2DDB892900753181 /* musicaprueba.mp3 */,
+				FB36DCE12DDB899D00753181 /* bosqueSound.mp3 */,
 				FB4E9BBF2DD78DAA0037539C /* Info.plist */,
 				FB4E9BBC2DD78DAA0037539C /* Preview Content */,
 			);
@@ -198,7 +213,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB36DCE02DDB892900753181 /* musicaprueba.mp3 in Resources */,
+				FB36DCE22DDB899D00753181 /* bosqueSound.mp3 in Resources */,
 				FB4E9BBE2DD78DAA0037539C /* Preview Assets.xcassets in Resources */,
+				FB4E9BD32DD791C70037539C /* caja.usdz in Resources */,
 				FB4E9BBB2DD78DAA0037539C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,8 +236,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB4E9BB72DD78DA90037539C /* ContentView.swift in Sources */,
+				FB36DCDA2DDB886300753181 /* Diorama.swift in Sources */,
 				FB4E9BB52DD78DA90037539C /* CuboAmbientalApp.swift in Sources */,
 				FB4E9BB92DD78DA90037539C /* ImmersiveView.swift in Sources */,
+				FB36DCD82DDB87F100753181 /* DioramaManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

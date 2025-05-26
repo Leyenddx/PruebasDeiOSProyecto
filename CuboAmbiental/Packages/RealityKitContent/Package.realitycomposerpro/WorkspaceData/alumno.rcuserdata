@@ -1,0 +1,87 @@
+{
+  "advancedEditorSelectedIdentifier" : "ProjectBrowser",
+  "openSceneRelativePaths" : [
+    "Untitled Scene.usda",
+    "Boid.usda"
+  ],
+  "recentIdentifiers" : {
+    "34E814FD-5FA2-497A-9EE3-05E89C01A28A" : [
+
+    ]
+  },
+  "sceneCameraHistory" : {
+    "0A4AB809-9AC9-4BDF-8AF7-525F6355B45A" : [
+      {
+        "date" : 769971146.162452,
+        "title" : "Untitled",
+        "transform" : [
+          1,
+          0,
+          -0,
+          0,
+          -0,
+          0.8660254,
+          -0.5,
+          0,
+          0,
+          0.5,
+          0.8660254,
+          0,
+          0,
+          0.26286113,
+          0.45528886,
+          1
+        ]
+      }
+    ],
+    "34E814FD-5FA2-497A-9EE3-05E89C01A28A" : [
+      {
+        "date" : 769980873.243756,
+        "title" : "Untitled",
+        "transform" : [
+          1,
+          0,
+          -0,
+          0,
+          -0,
+          0.8660253,
+          -0.5000002,
+          0,
+          0,
+          0.5000002,
+          0.8660253,
+          0,
+          0,
+          0.5257247,
+          0.910582,
+          1
+        ]
+      }
+    ],
+    "BFFE2F44-9471-4349-84C9-6FF27E07E4BD" : [
+      {
+        "date" : 769981021.14498,
+        "title" : "Untitled",
+        "transform" : [
+          1,
+          0,
+          -0,
+          0,
+          -0,
+          0.8660253,
+          -0.5000002,
+          0,
+          0,
+          0.5000002,
+          0.8660253,
+          0,
+          0,
+          0.5257247,
+          0.910582,
+          1
+        ]
+      }
+    ]
+  },
+  "selectedSceneRelativePath" : "Boid.usda"
+}
